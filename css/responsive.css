@@ -1,0 +1,511 @@
+
+/******************************MEDIA QUERIES***********************/
+@media (min-width:2280px) {
+.container {
+	width: 2100px;
+}
+ .banner-image img {
+    width: 100%;
+}
+.banner-text img {
+    margin: 35% 0 0 0px;
+}    
+    
+}
+@media (min-width:1980px) {
+.container {
+	width: 1700px;
+}
+.banner-image img {
+    width: 100%;
+}
+.banner-text img {
+    margin: 35% 0 0 0px;
+}      
+}
+
+@media (min-width:1900px) {
+.container {
+	width: 1700px;
+}
+    
+}
+
+
+@media (min-width:1600px) {
+.container {
+	width: 1400px;
+}
+    
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+	
+}
+@media screen and (max-width: 1100px) {
+.contact-info ul li a p {
+    width: 100%;
+    line-height: 20px;
+    margin-top: 4px;
+} 
+.pro-img img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+.abt-text p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}   
+.abt-text {
+    padding: 20px 40px;
+    margin: 42px 0 0 -70px;
+}    
+.step-part ul li:after {
+    display: none;
+}    
+.banner-image img {
+    width: 100%;
+}  
+.banner-text img {
+    margin: 35% 0 0 0px;
+    width: 100%;
+}    
+.banner {
+    height: 500px;
+}    
+.inn-banner img {
+	height: 300px;
+} 
+.inner-contact-details p {
+	font-size: 14px;
+} 
+.inn-serv-con .each-serv {
+	padding: 20px 40px;
+}    
+.inn-serv-con .serv-con p {
+	color: #656464;
+	font-size: 13px;
+	line-height: 22px;
+}
+.serv-con h3 {
+	margin-bottom: 24px;
+}    
+    
+    
+    
+}
+
+ @media screen and (max-width: 980px) {
+.container{
+	width:960px;	
+}
+.banner-image img {
+    width: 100%;
+}     
+     
+ }
+
+
+ @media screen and (max-width: 812px) {
+.container{
+	width:auto !important;	
+} 
+.header .navbar-toggler {
+	border: none !important;
+}  
+.banner-bg {
+	background-size: 100% 100%;
+}
+.menu li a {
+	padding: 10px 20px 10px !important;
+	display: block;
+	color: #bcbcbc;
+	font-size: 16px;
+	text-align: center;
+}
+.abt-img img {
+    width: 100%;
+}  
+#contact {
+	margin-top: 110px;
+}
+.con-deatails ul li a {
+	font-size: 24px;
+}     
+.field input[type="text"], .field input[type="email"] {
+	background-position: 95% 12px;
+}     
+.header .navbar-toggler {
+	position: absolute;
+	right: 0;
+	top: 28px;
+}  
+.inn-pro-overlay {
+	height: auto;
+}
+.inn-pro-text h3 {
+	font-size: 20px;
+}     
+     
+}
+
+
+@media screen and (max-width: 768px) {
+.header .navbar-toggler {
+	position: absolute;
+	right: 0;
+	top: 32px;
+}
+.inn-banner img {
+	height: 250px;
+} 
+.inner-contact-details {
+	width: 100%;
+}    
+.inner-contact-details p {
+	font-size: 14px;
+}    
+.inn-abt-text p {
+	line-height: 22px;
+}    
+.inn-abt-img {
+	margin-top: 40px;
+}    
+.inner-contact-details {
+	position: inherit;
+	width: 100%;
+}    
+.inn-serv-con .each-serv {
+	padding: 20px 10px;
+	float: left;
+	margin-bottom: 0;
+}
+.inn-serv-con .serv-con p {
+	font-size: 12px;
+	line-height: 22px;
+}    
+.serv-con h3 {
+	margin-bottom: 15px;
+}    
+.inn-serv-con .serv-con p {
+	font-size: 12px;
+	line-height: 19px;
+}    
+    
+
+}
+
+
+@media screen and (max-width: 756px) {
+.header .navbar-toggler {
+	top: 32px;
+}
+.con-deatails {
+	bottom: 0;
+}  
+.banner-image img {
+    width: 100%;
+}
+.banner-text img {
+    margin: 35% 0 0 0px;
+    width: 100%;
+}
+.page-btn {
+    margin: 10px 0px 0 0px;
+}
+.page-btn a {
+    padding: 8px 27px;
+}
+.banner {
+    height: 298px;
+}
+.step-part ul li {
+    width: 49%;
+    margin-bottom: 30px;
+}
+.abt-text {
+    margin: 0 0 0 0;
+}    
+.products {
+    background-position: center;
+}
+.copy p a {
+    text-align: center;
+}    
+.social ul {
+    float: none;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+.footer-content p {
+    padding: 0 0px;
+}    
+.inn-each-serv {
+    margin-bottom: 15px;
+}    
+.inn-pro-lft-img {
+	padding: 0;
+	margin-bottom: 30px;
+}
+.inn-pro-rght-img {
+	padding: 0;
+}     
+.inn-pro-overlay {
+	width: 100%;
+	height: auto;
+}    
+.inn-pro-text {
+	margin-bottom: 30px;
+}    
+    
+    
+    
+    
+    
+}
+ 
+@media screen and (max-width: 667px) {
+
+.con-deatails {
+	bottom: 0px;
+}
+
+.header .navbar-toggler {
+	top: 13px;
+} 
+.pro-img img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+.products {
+    background-position: center;
+} 
+ .copy p a {
+    text-align: center;
+}    
+.social ul {
+    float: none;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}      
+.banner-text img {
+    margin: 2% 0 0 0px;
+    width: 80%;
+}
+.page-btn {
+    margin: 10px 0px 0 0px;
+}
+  
+.page-btn a {
+    padding: 8px 27px;
+}    
+.step-part ul li {
+	width: 49%;
+	margin-bottom: 20px;
+}   
+.step-part ul li:after {
+    display: none;
+}
+.step-part h1 {
+    text-align: center;
+}    
+.abt-text {
+    margin: 0px 0 0 0px;
+}    
+.products {
+    background-position: center;
+}    
+.footer-content p {
+    padding: 0 0px;
+}    
+.contact-us {
+    background-position: center;
+}    
+.header .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+.partners img {
+    width: 100%;
+}
+.banner-image img {
+    margin: 15px auto 0;
+    width: 60%;
+    display: block;
+} 
+.top-header ul li a {
+    font-size: 14px;
+}   
+.logo-area > a {
+    padding: 20px 13px 20px 0 !important;
+}    
+     
+    
+    
+    
+    
+    
+    
+}
+
+
+@media screen and (max-width: 568px) {
+.menu li a {
+	padding: 10px 20px 10px !important;
+	display: block;
+	color: #bcbcbc;
+	font-size: 16px;
+	text-align: center;
+}
+
+#contact {
+	margin-top: 10%;
+}
+.con-deatails ul li a {
+	font-size: 20px;
+}    
+
+.field input[type="text"], .field input[type="email"] {
+	background-position: 95% 12px;
+}
+.banner {
+    height: 530px;
+    background-position: center;
+}  
+.banner-image img {
+    width: 50%;
+} 
+.banner-text img {
+    margin: 2% 0 0 0px;
+    width: 60%;
+} 
+ .inner-contact-form h3 {
+	font-size: 28px;
+	margin: 10px auto;
+	width: 100%;
+}   
+.inn-serv-con .each-serv {
+    padding: 20px 10px;
+}    
+.inn-serv-con .serv-con p {
+    color: #656464;
+    font-size: 13px;
+    line-height: 19px;
+}
+.step-part ul li {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.serv-icon {
+	width: 100%;
+}    
+.serv-con {
+	width: 100%;
+} 
+.inn-services {
+	padding-top: 50px;
+}    
+.inn-pro-text {
+	background-position: left;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.inn-pro-overlay {
+	height: auto;
+}    
+.inn-product {
+	padding-top: 50px;
+	padding-bottom: 10px;
+}    
+.inn-pro-lft-img {
+	padding: 0;
+	margin-bottom: 30px;
+}
+.inn-pro-rght-img {
+	padding: 0;
+}    
+.inn-banner img {
+	height: 200px;
+}    
+    
+    
+    
+}
+
+
+@media screen and (max-width: 480px) {
+.header .navbar-toggler {
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+       
+}
+    
+@media screen and (max-width: 414px) {    
+.header .navbar-toggler {
+	top: 24px;
+}
+.banner {
+    height: 350px;
+    background-position: center;
+}  
+    
+}
+
+@media screen and (max-width: 375px) {
+
+.header .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    border: none !important;
+}  
+ .con-deatails {
+	bottom: 0px;
+}  
+.pro-img img {
+    margin-left: 0;
+    width: 100%;
+}
+.footer-content h2 {
+    font-size: 28px;
+} 
+.abt-text h1 {
+    font-size: 36px;
+}
+.abt-text {
+    padding: 30px 20px;
+} 
+.top-header ul li a span img {
+    width: 10%;
+}
+.top-header ul li a {
+    font-size: 12px;
+}    
+.header .navbar-toggler {
+    top: 22px;
+}    
+.inn-banner img {
+	height: 140px;
+}    
+    
+    
+}
+
+
+@media screen and (max-width: 320px) {
+.header .navbar-toggler {
+    top: 22px;
+} 
+
+}

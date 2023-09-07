@@ -1,0 +1,845 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf')  format('truetype'), url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans-Light.ttf')  format('truetype'), url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf')  format('truetype'), url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  src: url('../fonts/MontserratAlternates-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MontserratAlternates-Regular.woff') format('woff'), url('../fonts/MontserratAlternates-Regular.ttf')  format('truetype'), url('../fonts/MontserratAlternates-Regular.svg#MontserratAlternates-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUIHistoric';
+  src: url('../fonts/SegoeUIHistoric.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUIHistoric.woff') format('woff'), url('../fonts/SegoeUIHistoric.ttf')  format('truetype'), url('../fonts/SegoeUIHistoric.svg#SegoeUIHistoric') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-SemiBold.woff') format('woff'), url('../fonts/OpenSans-SemiBold.ttf')  format('truetype'), url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: 'OpenSans-Regular' !important;
+	font-size: 14px;
+	font-weight: 400;
+}
+a, input, textarea {
+	transition:0.5s all ease-in-out;
+	-moz-transition:0.5s all ease-in-out;
+	-webkit-transition:0.5s all ease-in-out;
+	-ms-transition:0.5s all ease-in-out;
+	-o-transition:0.5s all ease-in-out;
+}
+html * {
+	outline:none;
+}
+ol, ul, li {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration:none;
+}
+a:hover, a:focus{
+	text-decoration:none !important;
+	outline:none !important;	
+}
+outline {
+	border:0;
+}
+
+/*=== Header ===*/
+.top-header {
+    padding: 10px 0;
+}
+.top-header ul {
+    margin: 0;
+}
+.top-header ul li {
+    display: inline-block;
+    position: relative;
+}
+.top-header ul li:last-child {
+    float: right;
+}
+.top-header ul li a {
+    font-size: 15px;
+    color: #0099da;
+    font-family: 'OpenSans-SemiBold';
+}
+.top-header ul li a:hover {
+	color: #000;
+}
+.top-header ul li a span {
+    margin-right: 5px;
+}
+.logo-area img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+.logo-area {
+    padding: 0 !important;
+}
+.logo-area > a {
+    padding: 30px 43px 30px 0 !important;
+    border-right: 1px solid #c9cacb;
+}
+.menu {
+	margin: 30px 0;
+}
+.menu li a {
+    padding: 10px 25px 10px !important;
+    display: block;
+    color: #3a3a3a !important;
+    font-size: 14px;
+    font-family: 'OpenSans-Bold';
+    text-transform: uppercase;
+    margin: 0;
+}
+.menu li a:hover {
+    color: #0099da !important;
+}
+.menu li:last-child a {
+    background: #39a8f7;
+    color: #fff !important;
+    border: 1px solid #39a8f7;
+}
+.menu li:last-child a:hover {
+    color: #0099da !important;
+    border: 1px solid #39a8f7;
+    background: #fff;
+}
+.menu li.active a {
+	color: #0099da !important;
+}
+/*.menu li a:hover {
+	color: #0e1c40 !important;
+}*/
+.header {
+	background: #fff;
+	border-top: 1px solid #c9cacb;
+	/*position: sticky;
+	top: 0;
+	z-index: 99999;*/
+}
+
+
+
+/*===== Banner =====*/
+
+.banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 602px;
+    object-fit: cover;
+}
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.banner-text img {
+    margin: 35% 0 0 40px;
+    width: 100%;
+}
+.page-btn {
+    margin: 30px 0px 0 46px;
+}
+.page-btn a {
+    padding: 18px 37px;
+    background: #0099da;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    border: 2px solid #0099da;
+}
+.page-btn a:hover {
+    background: #fff;
+    border: 2px solid #0099da;
+    color: #0099da;
+}
+.banner-image img {
+    margin: 67px 0 0 0;
+}
+
+/*====== Step =======*/
+
+
+.step-part {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.step-part h1 {
+    font-size: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: 'SegoeUIHistoric';
+}
+.step-part ul {
+    width: 100%;
+}
+.step-part ul li {
+    display: inline-block;
+    width: 24%;
+    position: relative;
+}
+.step-part ul li:after {
+    position: absolute;
+    content: "";
+    width: 98px;
+    height: 16px;
+    background: url(../image/arrow.png) no-repeat 0 0;
+    top: 42%;
+    right: -60px;
+}
+.step-part ul li:last-child:after {
+    display: none;
+}
+.step-part ul li img {
+    margin: 0 auto;
+    display: block;
+}
+.step-part ul li p {
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0 0px 0 40px;
+    font-size: 16px;
+}
+
+/*====== About =======*/
+
+
+.about-sec {
+	padding: 100px 0;
+	position: relative;
+}
+.abt-text {
+    background: #fff;
+}
+.abt-text h1 {
+    font-size: 40px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 20px;
+}
+.abt-text p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	color: #373737;
+}
+.abt-text p span {
+    color: #0099da;
+}
+.abt-text h5 a {
+    font-size: 15px;
+    color: #0099da;
+    font-weight: 500;
+}
+.abt-text {
+	background: #fff;
+	padding: 20px 50px;
+	margin: 20px 0 0 -70px;
+	box-shadow: 6px 3px 9px rgba(0,0,0,0.12);
+}
+.abt-img img {
+    width: 100%;
+}
+
+/*===== Products ======*/
+
+.products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 20px;
+}
+.pro-img img {
+    margin-left: -100px;
+}
+.pro-text h3 {
+    color: #fff;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    font-family: 'SegoeUIHistoric';
+}
+.pro-text p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+.pro-text {
+    margin: 90px 0 0 0;
+}
+.pro-img img {
+    margin-left: -100px;
+}
+
+/*====== Services ======*/
+
+.services {
+    background: #f2f2f2;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.services h1 {
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 92px;
+}
+.serv-icon {
+    width: 25%;
+    float: left;
+}
+.serv-con {
+    width: 75%;
+    float: left;
+}
+.serv-con h3 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 34px;
+    font-family: 'SegoeUIHistoric';
+}
+.serv-con p {
+    color: #656464;
+    font-size: 15px;
+    line-height: 28px;
+}
+.each-serv {
+    margin-bottom: 83px;
+}
+.each-serv:hover .serv-con h3 {
+	color: #39a8f7;
+}
+/*====== Partners =======*/
+
+.partners {
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+.partner-list ul {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.partner-list ul li {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*====== contact ======*/
+
+.contact-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-logo img {
+    margin: 0 auto 80px;
+    display: block;
+    text-align: center;
+}
+.footer-content h2 {
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-family: 'OpenSans-SemiBold';
+    margin-bottom: 30px;
+}
+.footer-content p {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 120px;
+}
+.contact-info h4 {
+    font-size: 20px;
+    font-family: 'OpenSans-SemiBold';
+    color: #575757;
+    margin-bottom: 25px;
+}
+.contact-info h4 span, .contact-form h4 span {
+    color: #0099da;
+}
+.contact-form h4 {
+    font-size: 20px;
+    font-family: 'OpenSans-SemiBold';
+    color: #575757;
+    margin-bottom: 25px;
+}
+.contact-info ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.contact-info ul li a img {
+	float: left;
+	margin-right: 10px;
+	width: 42px;
+	height: 44px;
+}
+.contact-info ul li a {
+	color: #000;
+	font-size: 14px;
+	line-height: 23px;
+	display: flex;
+}
+
+.contact-info ul li a p {
+    float: left;
+    width: 79%;
+    font-size: 14px;
+}
+.contact-info ul li a p span {
+    color: #0099da;
+}
+.footer-logo {
+	margin-bottom: 30px;
+}
+.half {
+    width: 48%;
+    float: left;
+    margin-right: 16px;
+}
+
+.field input[type="text"], .field input[type="tel"], .field input[type="email"], .field textarea {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #000;
+}
+
+.field input[type="submit"] {
+	margin: 30px 0;
+	padding: 10px 30px;
+	background: #0099e0;
+	border: 2px solid #0099e0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.field input[type="submit"]:hover {
+    color: #0099e0;
+    border: 2px solid #0099e0;
+    box-shadow: inset 180px 0 0 #fff;
+    transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+.social ul li {
+    display: inline-block;
+    margin: 3px;
+}
+.social ul {
+    float: right;
+}
+.copy-right {
+    background: #4c4c4c;
+    padding: 40px 0;
+}
+.copy p a {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.copy p a span {
+    color: #0099e0;
+}
+
+/*======= About Us Page ========*/
+
+
+.inn-banner img {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+}
+.inn-abt-text h1 {
+    font-size: 40px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 20px;
+}
+.inn-abt-text h4 {
+	font-size: 15px;
+	color: #000;
+	font-weight: 700;
+	line-height: 19px;
+	text-transform: uppercase;
+	padding: 20px 80px 20px 0;
+}
+.inn-abt-text p {
+	font-size: 13px;
+	color: #000;
+	font-weight: 400;
+	line-height: 30px;
+	padding: 0px 50px 0px 0;
+}
+.about {
+	background: #f2f2f2;
+	padding: 60px 0px;
+}
+.inn-abt-img img {
+	width: 100%;
+	padding: 20px;
+	border: 2px solid #39a8f7;
+}
+.inn-career-img img {
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #39a8f7;
+}
+
+/*======= Contact Page =======*/
+
+.inner-contact {
+	background: #f2f2f2;
+	padding: 60px 0;
+}
+.inn-banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.inner-contact-box {
+	background: #ffff;
+	margin: 30px 0;
+	box-shadow: 0 0 8px #999898;
+}
+.inner-contact-map {
+	padding: 0 !important;
+}
+.inner-contact-form h3 {
+	color: #262424;
+	font-size: 50px;
+	text-align: center;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	z-index: 9;
+	width: 340px;
+	font-family: 'SegoeUIHistoric';
+}
+.inner-contact-form form input[type="text"], .inner-contact-form form input[type="tel"], .inner-contact-form form input[type="email"] {
+	background: none;
+	border: none;
+	width: 100%;
+	padding: 10px 0px;
+	color: #000;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #39a8f7;
+}
+.inner-contact-form form textarea {
+	width: 100%;
+	height: 130px;
+	resize: none;
+	padding: 10px 0px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #39a8f7;
+	color: #000;
+}
+.inner-contact-form form input[type="submit"] {
+	background: #39a8f7;
+	border: 1px solid rgba(0,0,0,0);
+	color: #fff;
+	padding: 12px 50px;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+.inner-contact-form form input[type="submit"]:hover {
+	box-shadow: 350px 0 0 #fff inset;
+	border: 1px solid #39a8f7;
+	color: #39a8f7;
+}
+.inner-contact-form form {
+	padding: 20px 30px;
+	margin: 70px 0 0 0;
+}
+.inner-contact-form form h4 {
+	color: #000;
+}
+.inner-contact-form form p {
+	color: #fff;
+	font-size: 13px;
+	line-height: 18px;
+}
+.inner-contact-form form input[type="file"]{
+	color: #fff;
+	font-size: 14px;
+}
+.inner-contact-map iframe {
+	height: 570px;
+	width: 100%;
+	margin-bottom: -4px;
+}
+.inner-contact-form::before {
+	position: absolute;
+	content: '';
+	background: none;
+	width: 93%;
+	height: 89%;
+	top: 39px;
+	border-top: 2px solid #262424;
+	border-left: 2px dashed #39a8f7;
+	border-bottom: 2px solid #262424;
+	border-right: 2px dashed #39a8f7;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.inner-contact-details {
+	background: #39a8f7;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 380px;
+	padding: 10px 30px;
+}
+.inner-contact-details h3 {
+	color: #222;
+	text-align: right;
+	margin: 0px;
+	padding: 12px 0px;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-family: 'SegoeUIHistoric';
+}
+.inner-contact-details p {
+	text-align: right;
+	color: #222;
+	font-size: 16px;
+}
+.inner-contact-details p a{
+	color: #222;	
+}
+.inner-contact-details p a:hover, .inner-contact-details p a:focus{
+	color:#fff;	
+}
+.inner-contact-details p span{
+	color:#fff;	
+}
+.inn-about::after {
+	display: none;
+}
+
+/*===== Services Page ======*/
+.inn-services {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.inn-services h1 {
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 60px;
+}
+.inn-serv-con .each-serv {
+    padding: 50px 60px;
+    float: left;
+    margin-bottom: 0;
+}
+.inn-serv-con .serv-con p {
+    color: #656464;
+    font-size: 15px;
+    line-height: 25px;
+}
+.inn-serv-img img {
+    width: 100%;
+    transition:0.5s all ease-in-out;
+	-moz-transition:0.5s all ease-in-out;
+	-webkit-transition:0.5s all ease-in-out;
+	-ms-transition:0.5s all ease-in-out;
+	-o-transition:0.5s all ease-in-out;
+}
+.inn-serv-con {
+    padding: 0 !important;
+    margin: 0 0 0px 0;
+}
+.inn-serv-img {
+    padding: 0 !important;
+    margin: 0 0 -4px 0;
+    overflow: hidden;
+}
+.inn-serv-con {
+    background: #f6f6f6;
+}
+.inn-each-serv:hover .inn-serv-img img {
+    transform: scale(1.2);
+    transition:0.5s all ease-in-out;
+	-moz-transition:0.5s all ease-in-out;
+	-webkit-transition:0.5s all ease-in-out;
+	-ms-transition:0.5s all ease-in-out;
+	-o-transition:0.5s all ease-in-out;    
+}
+
+
+
+
+/*======= Products Page ========*/
+
+
+.inn-product {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.inn-product h1 {
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-family: 'SegoeUIHistoric';
+    margin-bottom: 60px;
+}
+.inn-pro-text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inn-pro-text h3 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-family: 'SegoeUIHistoric';
+}
+.inn-pro-text p {
+	line-height: 25px;
+	font-size: 15px;
+	margin-bottom: 20px;
+	padding: 0 3% 0px 0;
+}
+.inn-pro-lft-img img, .inn-pro-rght-img img {
+	width: 100%;
+	height: 356px;
+	object-fit: cover;
+	object-position: left;
+}
+.inn-pro-lft-img {
+	padding-left: 0;
+}
+.inn-pro-rght-img {
+	padding-right: 0;
+}
+.inn-pro-bottom {
+	margin-top: 30px;
+}
+.inn-pro-overlay {
+	background: rgba(255,255,255,0.7);
+	padding: 30px 20px;
+	width: 100%;
+	height: 590px;
+}
+.inn-pro-text ol {
+	margin-bottom: 15px;
+}
+.inn-pro-text ol li {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+.inn-pro-text h5 {
+	line-height: 18px;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
